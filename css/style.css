@@ -224,6 +224,10 @@ footer li a:hover {
         border-left: none;
     }
 
+    header {
+        padding: 150px 0;
+    }
+
     .pre-footer .border-left {
         border: none;
         padding: 10px 0;
