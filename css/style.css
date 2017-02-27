@@ -104,13 +104,17 @@ img {
     background-color: #ffffff;
 }
 
+.navbar .nav li a img {
+    margin-top: -5px;
+}
+
 .navbar .main-nav {
     margin-right: 20px;
 }
 
 .navbar .main-nav li a{
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 .navbar .main-nav li a:hover {
@@ -155,7 +159,6 @@ header .block {
 .pre-footer .border-left {
     border-left: 1px solid #7c7676;
     padding: 10px 0 10px 20px;
-    margin-top: -2px;
 }
 
 /* Footer style */
