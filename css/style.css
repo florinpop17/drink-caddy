@@ -1,0 +1,33 @@
+/* Fonts */
+@font-face {
+    src: url('../fonts/SourceSansPro-Black.otf');
+    font-family: SansBlack;
+}
+@font-face {
+    src: url('../fonts/SourceSansPro-Bold.otf');
+    font-family: SansBold;
+}
+@font-face {
+    src: url('../fonts/SourceSansPro-Semibold.otf');
+    font-family: SansSemibold;
+}
+@font-face {
+    src: url('../fonts/SourceSansPro-Light.otf');
+    font-family: SansLight;
+}
+
+/* General styles */
+body {
+    font-family: SansLight;
+}
+
+/* Header style */
+header {
+    background-image: url('../img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding: 200px 0;
+
+    color: white;
+}
