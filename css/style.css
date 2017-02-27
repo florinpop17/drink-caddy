@@ -21,13 +21,61 @@ body {
     font-family: SansLight;
 }
 
+h1 {
+    color: #bd1e2c;
+    font-family: SansBlack;
+    font-size: 80px;
+    line-height: 65px;
+    margin: 100px 0 50px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: white;
+    font-family: SansBold;
+    font-size: 34px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #000000;
+    font-family: SansBold;
+    font-size: 26px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: #000000;
+    font-family: SansLight;
+    font-size: 26px;
+    margin-bottom: 100px;
+}
+
+.btn-primary {
+    background-color: #bd1e2c;
+    border-radius: 0;
+    font-family: SansBold;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 40px;
+}
+
 /* Header style */
 header {
     background-image: url('../img/header-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    padding: 200px 0;
+    padding: 300px 0;
 
     color: white;
+}
+
+header .block {
+    color: white;
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
 }
