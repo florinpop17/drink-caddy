@@ -26,7 +26,7 @@ h1 {
     font-family: SansBlack;
     font-size: 80px;
     line-height: 65px;
-    margin: 100px 0 40px;
+    margin:0 0 40px;
     text-transform: uppercase;
 }
 
@@ -36,6 +36,7 @@ h2 {
     font-size: 34px;
     line-height: 30px;
     text-transform: uppercase;
+    margin: 0;
 }
 
 h3 {
@@ -51,7 +52,6 @@ h4 {
     color: #000000;
     font-family: SansLight;
     font-size: 26px;
-    margin-bottom: 100px;
 }
 
 .btn-primary {
@@ -61,10 +61,16 @@ h4 {
     font-size: 16px;
     text-transform: uppercase;
     padding: 5px 40px;
+    margin: 15px 0;
 }
 
 .grey-bg {
     background-color: #d6d3d3;
+}
+
+.heading-text {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 /* Header style */
@@ -82,7 +88,6 @@ header .block {
     color: white;
     display: block;
     font-size: 15px;
-    margin-top: 10px;
 }
 
 /* Details box style */
