@@ -205,11 +205,11 @@ img.bag-down{
 }
 
 .info-box.text-left{
-    right: 25%;
+    right: calc(50% - 125px - 200px);
 }
 
 .info-box.text-right {
-    left: 25%;
+    left: calc(50% - 125px - 200px);
 }
 
 .info-box.text-center {
