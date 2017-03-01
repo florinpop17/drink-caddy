@@ -199,6 +199,7 @@ img.bag-down{
 
 /* Info boxes */
 .info-box {
+    opacity: 0;
     position: absolute;
     width: 250px;
     z-index: 20;

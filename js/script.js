@@ -32,8 +32,6 @@ $(document).ready(() => {
 
 
 
-
-
     $(window).resize(() => {
         windowHeight = $(window).height();
     });
