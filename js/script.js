@@ -1,6 +1,7 @@
 var toggleHeads;
+var windowHeight = $(window).height();
 
-$(document).ready(function(){
+$(document).ready(() => {
     var head1 = $('.driver-head-1');
     var head2 = $('.driver-head-2');
 
@@ -15,14 +16,17 @@ $(document).ready(function(){
     // get all images
     var imgs = $('.animation-container > img');
 
+    // store info_boxes and images into an array
+    var arr = [...info_boxes, ...imgs];
+
     // set top position to data-top attribute
-    setDOMArrayToPos(info_boxes);
-    setDOMArrayToPos(imgs);
+    setDOMArrayToPos(arr);
+    //setDOMArrayToPos(imgs);
 });
 
 function setDOMArrayToPos(arr) {
-    // loop through all boxes
-    arr.each((idx, item) => {
+    // loop through all array items
+    arr.forEach((item) => {
 
         // convert DOM element to jQuery obj
         item = $(item);
@@ -34,3 +38,9 @@ function setDOMArrayToPos(arr) {
         item.css('top', topPos);
     });
 }
+
+$(document).scroll(() => {
+    var documentTop = $(document).scrollTop();
+
+    console.log('documentTop', documentTop, 'windowHeight', windowHeight)
+});
