@@ -60,12 +60,17 @@ img {
 
 .btn-primary {
     background-color: #bd1e2c;
+    border: 0;
     border-radius: 0;
     font-family: SansBold;
     font-size: 16px;
     text-transform: uppercase;
     padding: 5px 40px;
     margin: 15px 0;
+}
+
+.btn-primary:hover {
+    background-color; #A40513;
 }
 
 .grey-bg {
@@ -162,7 +167,7 @@ header .block {
 /* Animation container */
 .animation-container {
     position: relative;
-    height: 2000px;
+    height: 1350px;
 }
 
 .animation-container img{
@@ -193,7 +198,7 @@ img.clip {
 
 img.black-tube {
     top: 410px;
-    z-index: 5;
+    z-index: 7;
 
 }
 
@@ -208,14 +213,34 @@ img.sleeve {
 }
 
 img.bag {
-    top: 1000px;
+    top: 700px;
+}
+
+img.bag-up {
+    z-index:15;
+
+}
+
+img.bag-down{
     z-index:5;
 }
 
-img.bag-open {
-    top: 1000px;
-    z-index:15;
+/* Info boxes */
+.info-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+}
 
+.info-box h3 {
+    font-size: 32px;
+    line-height: 28px;
+}
+
+.info-box p {
+    font-size: 18px;
+    line-height: 18px;
 }
 
 /* Pre-footer style */
