@@ -162,7 +162,7 @@ header .block {
 /* Animation container */
 .animation-container {
     position: relative;
-    height: 20000px;
+    height: 5000px;
 }
 
 .animation-container img{
@@ -198,24 +198,23 @@ img.black-tube {
 }
 
 img.bottle {
-    top: 3200px;
+    top: 800px;
 
 }
 
 img.sleeve {
-    top: 4200px;
-    z-index: 1;
+    top: 838px;
 
 }
 
 img.bag-open {
-    top: 5200px;
+    top: 2400px;
     display: none;
 
 }
 
 img.bag {
-    top: 4200px;
+    top: 3000px;
 }
 
 /* Pre-footer style */
