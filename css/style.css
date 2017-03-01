@@ -162,7 +162,7 @@ header .block {
 /* Animation container */
 .animation-container {
     position: relative;
-    height: 5000px;
+    height: 2000px;
 }
 
 .animation-container img{
@@ -170,7 +170,7 @@ header .block {
     position: absolute;
     left: 50%;
     transform: translateX(-50%) rotate(0deg);
-    transition: transform 0.5s ease-in-out;
+    /*transition: transform 0.5s ease-in-out;*/
     z-index: 10;
 }
 
@@ -207,14 +207,15 @@ img.sleeve {
 
 }
 
-img.bag-open {
-    top: 2400px;
-    display: none;
-
+img.bag {
+    top: 1000px;
+    z-index:5;
 }
 
-img.bag {
-    top: 3000px;
+img.bag-open {
+    top: 1000px;
+    z-index:15;
+
 }
 
 /* Pre-footer style */
