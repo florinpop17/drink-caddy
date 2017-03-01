@@ -3,7 +3,6 @@ $(document).ready(() => {
     var windowHeight = $(window).height();
 
     var initialOffset = 100;
-    var animSpeed = 0.3;
 
     var head1 = $('.driver-head-1');
     var head2 = $('.driver-head-2');
@@ -46,10 +45,25 @@ $(document).ready(() => {
         // is bigger than the animation container top offset
         // start animating things around
         if(documentTop + windowHeight > animTop){
-            var newTopOffset = initialOffset - (((documentTop + windowHeight) - animTop) * animSpeed);
-            setTopPos(arr, newTopOffset);
+
+            // All animation goes into this loop
+            animationLoop(documentTop)
         }
     });
+
+    function animationLoop(documentTop){
+        // set animation speed
+        var animSpeed = 0.3;
+
+        // get the pixels scrolled in the animationContainer
+        var pixels = (documentTop + windowHeight) - animTop;
+
+        var newTopOffset = initialOffset - pixels * animSpeed;
+
+
+        setTopPos(arr, newTopOffset);
+
+    }
 
     function setTopPos(arr, offset) {
         // loop through all array items
