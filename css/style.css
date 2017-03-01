@@ -159,6 +159,65 @@ header .block {
     line-height: 20px;
 }
 
+/* Animation container */
+.animation-container {
+    position: relative;
+    height: 20000px;
+}
+
+.animation-container img{
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+    z-index: 10;
+}
+
+.animation-container img.hide {
+    transform:translateX(-50%) rotate(90deg);
+}
+
+img.driver-head-1 {
+    top: 0;
+}
+
+img.driver-head-2 {
+    top: 0;
+}
+
+img.clip {
+    top: 313px;
+
+}
+
+img.black-tube {
+    top: 410px;
+    z-index: 5;
+
+}
+
+img.bottle {
+    top: 3200px;
+
+}
+
+img.sleeve {
+    top: 4200px;
+    z-index: 1;
+
+}
+
+img.bag-open {
+    top: 5200px;
+    display: none;
+
+}
+
+img.bag {
+    top: 4200px;
+}
+
 /* Pre-footer style */
 .pre-footer .border-left {
     border-left: 1px solid #7c7676;
