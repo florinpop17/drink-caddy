@@ -1,23 +1,4 @@
 $(document).ready(() => {
-    var toggleHeads;
-    var windowHeight = $(window).height();
-
-    var initialOffset = 100;
-
-    var head1 = $('.driver-head-1');
-    var head2 = $('.driver-head-2');
-
-    toggleHeads = function() {
-        head1.toggleClass('hide');
-        head2.toggleClass('hide');
-    }
-
-    // get the animation container div
-    var animationContainer = $('#animationContainer');
-
-    // get it's top value
-    var animTop = animationContainer.offset().top;
-
     // get all info_boxes
     var infoBoxes = $('.animation-container .info-box');
 
@@ -28,42 +9,15 @@ $(document).ready(() => {
     var arr = [...infoBoxes, ...imgs];
 
     // set top position to data-top attribute
-    setTopPos(arr, initialOffset);
+    setTopPos(arr);
 
-
-
-    $(window).resize(() => {
-        windowHeight = $(window).height();
-    });
 
     $(document).scroll(() => {
-        var documentTop = $(document).scrollTop();
 
-        // if document's top scroll position + the window height
-        // is bigger than the animation container top offset
-        // start animating things around
-        if(documentTop + windowHeight > animTop){
-
-            // All animation goes into this loop
-            animationLoop(documentTop)
-        }
     });
 
-    function animationLoop(documentTop){
-        // set animation speed
-        var animSpeed = 0.3;
-
-        // get the pixels scrolled in the animationContainer
-        var pixels = (documentTop + windowHeight) - animTop;
-
-        var newTopOffset = initialOffset - pixels * animSpeed;
-
-
-        setTopPos(arr, newTopOffset);
-
-    }
-
-    function setTopPos(arr, offset) {
+    function setTopPos(arr) {
+        var pixels = pixels || 0;
         // loop through all array items
         arr.forEach((item) => {
 
@@ -72,10 +26,10 @@ $(document).ready(() => {
 
             // get the data-top attribute
             // add the offset to it
-            var topPos = item.data('top') + offset + 'px';
+            var topPos = item.data('top')
 
             // set the value to it's top attribute
-            item.css('top', topPos);
+            item.css('top', topPos + 'px');
         });
     }
 
